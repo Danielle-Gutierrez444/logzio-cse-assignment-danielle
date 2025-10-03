@@ -56,7 +56,7 @@ Built a minimal Flask service:
 
 - GET /healthz → {"status":"ok"}
 
-Each request logs one JSON line (method, path, status, and candidate.name if present) to stdout for ingestion by Logz.io.
+- Each request logs one JSON line (method, path, status, and candidate.name if present) to stdout for ingestion by Logz.io.
 
 ## 5. Containerization
 
@@ -122,10 +122,17 @@ service.name:"hello-app" AND candidate.name:"Danielle"
 
 - Edited file → changed to threshold=50.
 
-- Used PUT to update alert via API.
+- Sent PUT request back to Logz.io Alerts API to update the alert definition.
 
-- Confirmed update with a second GET.
+- Confirmed update with a second GET, confirming the new threshold.
 
+- Example request (sanitized):
+   ```bash
+   curl -X PUT https://api.logz.io/v1/alerts/{alert_id} \
+  -H "X-API-TOKEN: <api_token>" \
+  -H "Content-Type: application/json" \
+  -d @updated_alert.json
+   
 ## 9. Dashboard
 
 Built a 2-panel dashboard:
