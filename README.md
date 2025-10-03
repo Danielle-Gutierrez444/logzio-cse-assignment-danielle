@@ -8,7 +8,7 @@ This project demonstrates deploying a containerized Flask application on Kuberne
 - Signed up for a **free trial** on Logz.io using temp mail (per instructions).  
 - Verified account and logged into the Logz.io console.  
 
-<img width="728" height="698" alt="Signup" src="https://github.com/user-attachments/assets/b6ad7796-5edb-4ab5-b399-66af79e1893f" />
+![Signup confirmation](docs/Signup.png)
 
 ---
 
@@ -16,9 +16,9 @@ This project demonstrates deploying a containerized Flask application on Kuberne
 - Grabbed initial **data shipping token** via installation instructions.  
 - Created an **API token** (“test alert”) later to work with the Alerts API.
   
-<img width="1317" height="361" alt="Datashippingtoken" src="https://github.com/user-attachments/assets/ba42aef3-da05-412e-98dd-a6e6908dbe64" />
+![Data shipping token](docs/Datashippingtoken.png) 
 
-<img width="1329" height="301" alt="APItoken" src="https://github.com/user-attachments/assets/2c436eb9-4a68-42a6-af05-a90de2ab98f6" />
+![API token](docs/APItoken.png)  
 
 ---
 
@@ -42,10 +42,9 @@ Installed prerequisites:
 
 - Result: “Agent completed successfully.” Logz.io UI updated to show Receiving Data.
 
-  <img width="566" height="207" alt="Agentcompletedsuccessfully" src="https://github.com/user-attachments/assets/8fd8ad62-bef5-4132-ac8e-a5384da319d0" />
+![Agent completed successfully](docs/Agentcompletedsuccessfully.png)  
   
-
-  <img width="1438" height="789" alt="Logz ioUIReceivingData" src="https://github.com/user-attachments/assets/57ccbe63-8033-41b9-bed6-2ab33e7f0342" />
+![Logs UI receiving data](docs/Logz.ioUIReceivingData.png)  
 
 ## 4. Flask Application
 
@@ -85,7 +84,7 @@ minikube service hello-app --url
 curl http://127.0.0.1:8080
 ```
 
-<img width="876" height="348" alt="Kubernetespodrunning" src="https://github.com/user-attachments/assets/460297f1-991e-48fe-b007-201e03b35daa" />
+![Kubernetes pod running](docs/Kubernetespodrunning.png)  
 
 
 ## 7. Logs in Logz.io
